@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./images/CUHK.svg.ico" type="image/x-icon" />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>HomeRepo</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a href="/" class="scroll-link">
+            CUHK 
+            </a>
+          </div>
+
+          <div class="nav__delivery">
+            <svg class="nav_icons_location">
+              <use xlink:href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            <p class="nav_delivery_text">
+              Deliver to
+            </p>
+            <p class="nav_delivery_text_location">
+                 Lee Shu Pui Hall
+            </p>
+          </div>
+
+          <div class="nav__menu">
+            
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link scroll-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#category" class="nav__link scroll-link">Category</a>
+              </li>
+              <li class="nav__item">
+                <a href="#news" class="nav__link scroll-link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__icons">
+            <a href="#" class="icon__item">
+              <svg class="icon__user">
+                <use xlink:href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="icon__item">
+              <svg class="icon__search">
+                <use xlink:href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <a href="#" class="icon__item">
+              <div class="nav__shopping__cart">
+                <p hidden class="cart__para">
+                  Shopping Cart
+                </p>
+              </div>
+              <svg class="icon__cart" title="Shopping Cart">
+                <use xlink:href="./images/sprite.svg#icon-shopping-basket" title="Shopping Cart"></use>
+              </svg>
+              <span id="cart__total" >3</span>
+            </a>
+          </div>
+          <div class="cart__contaienr">
+             <div class="cart__tooltip">
+               Shopping Cart : <b>3</b>
+               
+               <div class="cart__tooltiptext">
+                <h3><u>Shopping Cart (Total: $1851.44)</u></h3>
+                <br>
+                <ul>- Clean Code    [1]   $318.41</ul>
+                <ul>- Introduction to Algorithms [1] $742.01</ul>
+                <ul>- Design Patterns [2] $791.02</ul>
+                <br>
+                <h3 class="cart__tooltiptext__checkout">Checkout</h3>
+             </div>
+          </div>
+         
+        </nav>
+        
+      </div>
+    </div>
+    <div class="hero">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span class="hero__left__span">From <b>Survival</b> to <b>Enjoyment</b> </span>
+                  <h1 class="hero__left__h1">All you need in CUHK</h1>
+                  <a href="#category" class="nav__link scroll-link"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <div class="hero__img-container">
+                    <img class="banner_01" src="./images/1200px-CUHK.svg.png" alt="banner2" />
+                  </div>
+                </div>
+              </div>
+
+    </div>
+  </header>
+      <section class="category__section section" id="category">
+        <div class="tab__list">
+          <div class="title__container tabs">
+            <div class="section__titles category__titles ">
+              <div class="section__title filter-btn active" data-id="All Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">All Products</h1>
+              </div>
+            </div>
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Trending Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Reference Books</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Special Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Electronics </h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Featured Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Arts & Crafts</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="category__center"></div>
+        </div>
+    </div>
+    </section>
+
+    <!--Product Section-->
+    <section class="product category__products">
+        <div class="product__first">
+        <div class="product__container">
+        <div class="product__header">
+           
+              <a href="cleancode.html"> 
+                <img src="images/products/ReferenceBook/CleanCode.jpg" class="product__image"/>  
+                <h3 class="image__overlay">View Details</h3>
+              </a>
+        </div>
+        <div class="product__footer">
+            <h3>Clean Code</h3>
+        
+        <div class="product__price">
+            <h4>$318.41</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+            <a href="algo.html">
+            <img src="images/products/ReferenceBook/DSandAlgo.jpeg" class="product__image"/>
+            <h3 class="image__overlay">View Details</h3>
+          </a>
+          </div>
+        <div class="product__footer">
+            <h3>Introduction to Algorithms</h3>
+        
+        <div class="product__price">
+            <h4>$742.01</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+            <a href="design_pattern.html">
+              <img src="images/products/ReferenceBook//DesginPattern.jpg"class="product__image" />
+              <h3 class="image__overlay">View Details</h3>
+            </a> 
+        </div>
+        <div class="product__footer">
+            <h3>Design Patterns</h3>
+        
+        <div class="product__price">
+            <h4>$395.51</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+          <a href="cpp.html">
+            <img src="images/products/ReferenceBook/Cpp.jpg" class="product__image"/>
+          </a>
+            
+        </div>
+        <div class="product__footer">
+            <h3>C++ Programming </h3>
+        
+        <div class="product__price">
+            <h4>$569.68</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+    </div>
+     <div class="product__second ">
+        <div class="product__container">
+            <div class="product__header">
+                <img src="images/products/Electronics/Delonghi.jpg" class="product__image"/>
+                <h3 class="image__overlay">View Details</h3>
+            </div>
+            <div class="product__footer">
+                <h3>De'Longhi Coffee Machine</h3>
+            
+            <div class="product__price">
+                <h4>$1569.2</h4>
+            </div>
+            <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+            </div>
+         </div>
+         <div class="product__container">
+            <div class="product__header">
+                <img src="images/products/Electronics/Dyson.jpeg" class="product__image"/>
+                <h3 class="image__overlay">View Details</h3>
+            </div>
+            <div class="product__footer">
+                <h3>Dyson V8 Fluffy</h3>
+            
+            <div class="product__price">
+                <h4>$3480</h4>
+            </div>
+            <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+            </div>
+         </div>
+         <div class="product__container">
+            <div class="product__header">
+                <img src="images/products/Electronics/IMac.jpeg" class="product__image"/>
+                <h3 class="image__overlay">View Details</h3>
+            </div>
+            <div class="product__footer">
+                <h3>IMac</h3>
+            
+            <div class="product__price">
+                <h4>$15399</h4>
+            </div>
+            <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+            </div>
+         </div>
+         <div class="product__container">
+            <div class="product__header">
+                <img src="images/products/Electronics//Samsung_Curve.jpg" class="product__image"/>
+                <h3 class="image__overlay">View Details</h3>
+            </div>
+            <div class="product__footer">
+                <h3>Samsung Curve Monitor</h3>
+            
+            <div class="product__price">
+                <h4>$4299</h4>
+            </div>
+            <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+            </div>
+     </div>
+    </div>
+    <div class="product__first">
+        <div class="product__container">
+        <div class="product__header">
+            <img src="images/Art/Beatles.jpg" class="product__image"/>
+            <h3 class="image__overlay">View Details</h3>
+        </div>
+        <div class="product__footer">
+            <h3>Hey Jude</h3>
+        
+        <div class="product__price">
+            <h4>$368.24</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+            <img src="images/Art/Beatles_1.jpg" class="product__image"/>
+            <h3 class="image__overlay">View Details</h3>
+        </div>
+        <div class="product__footer">
+            <h3>Something</h3>
+        
+        <div class="product__price">
+            <h4>$713.29</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+            <img src="images/Art/Beatles_2.jpeg" class="product__image"/>
+            <h3 class="image__overlay">View Details</h3>
+        </div>
+        <div class="product__footer">
+            <h3>Let It Be</h3>
+        
+        <div class="product__price">
+            <h4>$395.16</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+     <div class="product__container">
+        <div class="product__header">
+            <img src="images/Art/Beatles__3.jpg" class="product__image"/>
+            <h3 class="image__overlay">View Details</h3>
+        </div>
+        <div class="product__footer">
+            <h3>Don't Let Me Down</h3>
+        
+        <div class="product__price">
+            <h4>$599.69</h4>
+        </div>
+        <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+        </div>
+     </div>
+    </div>
+    </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="section testimonial" id="testimonial">
+      <div class="testimonial__container">
+        <div class="glide" id="glide_4">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="testimonial__box">
+                  <div class="client__image">
+                    <img src="./images/cc-logo.png" alt="profile">
+                  </div>
+                  <p>Chung Chi College was founded in October 1951 by the representatives of Protestant Churches in Hong Kong to fill the need for a local institution of higher learning that would be both Chinese and Christian. In 1955 it was formally incorporated under an ordinance of the Hong Kong Government.
+
+ 
+
+                    The College had a very modest beginning with only 63 students in the first year. It used borrowed and rented premises, first in the Cathedral Hall and St. Paul's Co-educational College on Hong Kong Island, and later on at No. 147 Caine Road and in the Bishop Hoare Memorial Building on Lower Albert Road. Expansion was made possible by financial help from North America through the United Board for Christian Higher Education in Asia and the Trustees of Lingnan University, and from Britain through the Asia Christian Colleges Association. Local churches, firms and private individuals also gave considerable support. In 1956 the College moved to its permanent site in the New Territories, in the beautiful Ma Liu Shui Valley. In 1963 the College was incorporated as one of the three founding colleges of The Chinese University of Hong Kong.</p>
+                  <div class="client__info">
+                    <h3>Chung Chi College</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscription -->
+    <section class="section newsletter" id="contact">
+      <div class="container">
+        <div class="newsletter__content">
+          <div class="newsletter__data">
+            <h3>SUBSCRIBE TO OUR SOCIAL MEDIA</h3>
+            <p>SHARE WITH YOUR FRIENDSGET AND GET THE LATEST DISCOUNT</p>
+          </div>
+          <form action="#">
+            <input type="email" placeholder="Enter your email address" class="newsletter__email">
+            <a class="newsletter__link" href="#">subscribe</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer-top__box">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-top__box">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-location"></use>
+              </svg>
+            </span>
+            Chung Chi College, The Chinese University of Hong Kong, Shatin, N.T., Hong Kong SAR
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+            </span>
+            ccc@cuhk.edu.hk
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+            (852) 3943 6451
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+              </svg>
+            </span>
+            Dream Land, Hong Kong 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer-bottom__box">
+
+      </div>
+      <div class="footer-bottom__box">
+
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- Go To Arrow-->
+  <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+</body>
+</html>
