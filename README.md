@@ -1,5 +1,7 @@
 # CUHK__SHOP__HTML-CSS-JS
 
+[https://secure.s29.ierg4210.ie.cuhk.edu.hk/Assignment4/](https://secure.s29.ierg4210.ie.cuhk.edu.hk/Assignment4/)
+
 ### DOM Manipultion 
 User Experience 
 1. Dispplay products dynamically ( JSON / using php to import mysql table) 
